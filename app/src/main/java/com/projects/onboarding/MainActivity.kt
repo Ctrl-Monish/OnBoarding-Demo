@@ -62,6 +62,11 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(applicationContext, HomeActivity::class.java)
                 startActivity(intent)            }
         }
+        binding.skipbtn.setOnClickListener {
+            val intent = Intent(applicationContext, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
         tabLayout = findViewById(R.id.tabindicator)
         tabLayout!!.addOnTabSelectedListener(object: OnTabSelectedListener{
             override fun onTabSelected(tab: TabLayout.Tab?) {
